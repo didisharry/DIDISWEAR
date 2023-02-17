@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0.css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0.css/font-awesome.min.css">
+</head>
+<body>
+   
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/logo.png" width="125px">
+                </div>
+                <nav>
+                    <div class="nav_menu" id="nav-menu">
+                        <ul class="nav_list" id="MenuItems">
+                            <li class="nav_item"><a href="./didis.html" class="nav_link">Home</a></li>
+                            <li class="nav_item"><a href="./productdetails.html" class="nav_link">Product</a></li>
+                            <li class="nav_item"><a href="./didis.html" class="nav_link ">About</a></li>
+                            <li class="nav_item"><a href="./didis.html" class="nav_link ">Contact</a></li>
+                            <li class="nav_item"><a href="./account.html" class="nav_link ">Account</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <img src="images/cart.png" width="30px" height="30px">
+                <img src="images/menu.png" class="menu-icon " onclick="menutoggle()">
+            </div>
+        </div>
+   <!--------Checkout form-------->
+<h2>CheckOut Form</h2>
+<div class="rowC">
+    <div class="col-75">
+        <div class="containerC">
+            <form action="/action_page.php">
+                <div class="rowC">
+                    <div class="col-58">
+                        <h3>Billing Address</h3>
+                        <label for="fname"><i class="fa fa-user"></i>Full Name</label>
+                        <input type1="text" id="fname" name="firstname" placeholder="Didis.K.Henry">
+
+                        <label for="fname"><i class="fa fa-envelope"></i>Email</label>
+                        <input type1="text" id="email" name="email" placeholder="didis@Example.com">
+
+                        <label for="fname"><i class="fa fa-address-caed-o"></i>Address</label>
+                        <input type1="text" id="addr" name="address" placeholder="401 N. 4th Block">
+
+                        <label for="city"><i class="fa fa-institution"></i>City</label>
+                        <input type1="text" id="city" name="city" placeholder="Thika/Nairobi">
+
+                        <div class="rowC">
+                            <div class="col-50">
+                                <label for="state">State</label>
+                                <input type1="text" id="state" name="state" placeholder="pp">
+                            </div>
+                            <div class="col-50">
+                                <label for="state">Zip</label>
+                                <input type1="text" id="zip" name="state" placeholder="10001">
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="col-50">
+                        <h3>Payment Mentods</h3>
+                        <label for="fname">Accepted Card</label>
+                        <div class="icon-container">
+                            <i class="fa fa-cc-visa" style="color: navy;"></i>
+                            <i class="fa fa-cc-mastercard" style="color: red;"></i>
+                            <i class="fa fa-cc-mpesa" style="color: green;"></i>
+                        </div>
+                        <label for="cname">Name on Card</label>
+                        <input type1="text" id="cname" name="cardnumber" placeholder="Didis.K.Henry">
+
+                        <label for="ccnum">Credit Card</label>
+                        <input type1="text" id="ccnum" name="cardnumber" placeholder="0000-0000-0000-0000">
+
+                        <label for="expmonth">Exp Month</label>
+                        <input type1="text" id="expmonth" name="expmonth" placeholder="September">
+                        <div class="rowC">
+                            <div class="col-50">
+                                <label for="expyear">Exp Year</label>
+                                <input type1="text" id="expyear" name="expyear" placeholder="2020">
+                            </div>
+                            <div class="col-50">
+                                <label for="cvv">CVV</label>
+                                <input type1="text" id="cvv" placeholder="532">
+                            </div>
+                        </div>
+                    </div>
+
+                    <label>
+                    <input type="checkbox" checked="checked" name="sameaddr">Shipping address same as billing</label>
+                    <input type1="submit" value="Continue To CheckOut" class="btn1">
+                </div>
+            </form>  
+        </div>
+        <div class="col-25">
+            <div class="containerC">
+                <h4>Card<span class="price" style="color: #000000"></span><i class="fa fa-shopping-cart"></i><b>4</b></h4>
+                <p><a href="#">tshirt</a><span class="price">Ksh.600</span></p>
+                <p><a href="#">cap</a><span class="price">Ksh.400</span></p>
+                <p><a href="#">hood</a><span class="price">Ksh.1400</span></p>
+                <p><a href="#">shoe</a><span class="price">Ksh.3500</span></p>
+                <hr>
+                <p>Total <span class="price" style="color: #000000"><b>Ksh.5900</b></span></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+   <!--------Footer-------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>PRODUCT STORE</p>
+                <div class="app-logo">
+                    <img src="images/play-store.png">
+                    <img src="images/app-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <h3>Explore</h3>
+               <ul>
+                  <li>Home</li>
+                  <li>Products</li>
+                  <li>About</li>
+                  <li>Contact</li>
+                  <li>Account</li>
+               </ul>
+            </div>
+            <div class="footer-col-3">
+                <h3>Our Services</h3>
+                <ul>
+                    <li>Pricing</li>
+                    <li>Free Shipping</li>
+                    <li>Coupons</li>
+                    <li>Money Refunds</li>
+                 </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+       
+        <p class="copyright">2020 Copyright Terms & Conditions Apply~didis</p>
+        
+    </div>
+</div>
+
+<!-------js for toggle menu-------->
+<script>
+    var MenuItems = document.getElementById(MenuItems);
+    MenuItems.style.maxHeight= "0px";
+    function menutoggle(){
+        if (MenuItems.style.maxHeight== "0px")
+        {
+            MenuItems.style.maxHeight= "200px";
+        }
+        else{
+            MenuItems.style.maxHeight= "0px";
+        }
+    }
+</script>
+
+<!-------js for product gallery-------->
+<script>
+    var ProductImg = document.getElementById("productImg");
+    var SmallImg = document.getElementsByClassName("small-img");
+
+    SmallImg[0].onclick = function()
+    {
+        ProductImg.src = SmallImg[0].src;
+    }
+    SmallImg[1].onclick = function()
+    {
+        ProductImg.src = SmallImg[1].src;
+    }
+    SmallImg[2].onclick = function()
+    {
+        ProductImg.src = SmallImg[2].src;
+    }
+    SmallImg[3].onclick = function()
+    {
+        ProductImg.src = SmallImg[3].src;
+    }
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
